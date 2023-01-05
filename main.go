@@ -31,5 +31,3 @@ func main() {
 	bookings = append(bookings, firstName+" "+lastName)
 	fmt.Printf("Current User List %s \n", bookings)
 }
-
-// initial release of the app
