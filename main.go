@@ -128,10 +128,13 @@ func sendTicket(userTickets uint, firstName string, lastName string, email strin
 	/* This function simulates the sending of a ticket to the user by displaying a message
 	with the ticket details after a 50 second delay (using time.Sleep).
 	It is designed to be run as a goroutine using the go keyword.*/
-	time.Sleep(15 * time.Second)
+	time.Sleep(50 * time.Second)
 	var ticket = fmt.Sprintf("%v tickets for %v %v", userTickets, firstName, lastName)
 	fmt.Println("#################")
 	fmt.Printf("Sending ticket:\n %v \nto email address %v\n", ticket, email)
 	fmt.Println("#################")
 	wg.Done()
 }
+
+// Thanks for having a look. Here is a quote for you. 😀
+// “Go as far as you can see; when you get there, you’ll be able to see further.” —Thomas Carlyle
